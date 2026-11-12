@@ -117,11 +117,11 @@ $('#form').addEventListener('submit', async e => {
   if (!name || digits.length < 10 || !$('#agree').checked) return;
   if ($('[name=site]').value) return;
   const err = $('#eSend');
-  if (!ENDPOINT) { err.textContent = 'Приём заявок пока не подключён. Позвоните: +7 (915) 045-38-00'; return; }
+  if (!ENDPOINT) { err.textContent = 'Приём заявок пока не подключён. Позвоните: +7 (995) 509-74-60'; return; }
   const btn = e.submitter; btn.disabled = true; err.textContent = '';
   try {
     const r = await fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ service: st.service, day: st.day, time: st.time, name, phone, msg: $('#msg').value.trim() }) });
     if (!r.ok) throw 0;
     go(4);
-  } catch { err.textContent = 'Не удалось отправить. Позвоните: +7 (915) 045-38-00'; btn.disabled = false; }
+  } catch { err.textContent = 'Не удалось отправить. Позвоните: +7 (995) 509-74-60'; btn.disabled = false; }
 });
