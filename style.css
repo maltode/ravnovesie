@@ -251,3 +251,9 @@ footer.site{padding:var(--s6) 0 var(--s3);font-size:16px;color:#E6D8C6;backgroun
   body{padding-bottom:80px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}.hero-bg{transform:scale(1.06)}}
+
+.soc{display:flex;flex-wrap:wrap;gap:var(--s1);margin-top:var(--s1)}
+.chip-l{display:inline-flex;align-items:center;min-height:40px;padding:0 var(--s2);border-radius:999px;border:1.5px solid rgba(247,240,230,.5);color:#F7F0E6!important;text-decoration:none;font-weight:500;font-size:15px;transition:background .3s}
+.chip-l:hover{background:rgba(255,255,255,.14)}
+.chip-l.dark{border-color:var(--brown);color:var(--brown-d)!important}
+.chip-l.dark:hover{background:var(--sand)}
