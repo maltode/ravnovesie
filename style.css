@@ -169,6 +169,9 @@ details[open].srv .pm{transform:rotate(45deg);background:var(--brown);color:#fff
 .chip{min-height:48px;min-width:64px;padding:0 var(--s2);border:2px solid var(--line);background:var(--bg);border-radius:var(--r-s);font:500 16px var(--f-body);color:var(--text);cursor:pointer;text-align:center;line-height:1.2}
 .chip[aria-pressed=true]{background:var(--brown);border-color:var(--brown);color:#fff}
 .chip small{display:block;font-size:14px;opacity:.85}
+.chip:disabled{opacity:.45;cursor:not-allowed;text-decoration:line-through}
+.hint{color:var(--muted);font-size:15px;padding:var(--s1) 0}
+#eSend a{color:inherit;text-decoration:underline}
 .lbl{display:block;font-weight:600;margin:var(--s3) 0 var(--s1)}
 .field{width:100%;min-height:56px;padding:0 var(--s2);border:2px solid var(--line);border-radius:var(--r-s);font:400 16px var(--f-body);background:var(--bg);color:var(--text)}
 textarea.field{padding:var(--s2);min-height:96px;resize:vertical}
